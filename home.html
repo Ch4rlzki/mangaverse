@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html data-bs-theme="light">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>MangaVerse - Unofficial Manga Database, No Ads</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./assets/css/home.min.css'>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="./home.html">MangaVerse</a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvas">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-start bg-body-tertiary h-auto" id="navbarOffcanvas">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title">MangaVerse</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                    </div>
+                    <div class="offcanvas-body d-flex flex-column flex-lg-row justify-content-lg-end">
+                        <form class="mb-2 mb-lg-0 me-0 me-lg-2 col-lg-4" id="searchForm">
+                            <input type="search" class="form-control bg-white border-bottom" placeholder="Quick Search...">
+                        </form>
+                        <ul class="navbar-nav px-2 px-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="./home.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" href="#">About Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="modal fade" id="mainModal" data-bs-backdrop="static">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary btn-sm text-white" data-bs-dismiss="modal">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <section class="header">
+            <div class="header-background"></div>
+            <div class="header-content py-3 py-lg-5">
+                <div class="header-container">
+                    <div class="container mb-4">
+                        <h1>Top Manga</h1>
+                    </div>
+                    <div id="headerCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner container">
+
+                            <div class="carousel-item active">
+                                <div class="row px-2 px-sm-0 gap-3">
+                                    <div class="col-xl-3 d-flex justify-content-center">
+                                        <div class="bg-body-secondary rounded" style="height: 400px; width: 250px;"></div>
+                                    </div>
+                                    <div class="col-xl rounded-3 p-3 placeholder-glow">
+                                        <h2><span class="placeholder col-4"></span></h2>
+                                        <p>
+                                            <span class="placeholder col-6"></span>
+                                            <span class="placeholder col-3"></span>
+                                            <span class="placeholder col-2"></span>
+                                            <span class="placeholder col-2"></span>
+                                            <span class="placeholder col-3"></span>
+                                            <span class="placeholder col-6"></span>
+                                            <span class="placeholder col-7"></span>
+                                            <span class="placeholder col-4"></span>
+                                            <span class="placeholder col-6"></span>
+                                            <span class="placeholder col-3"></span>
+                                            <span class="placeholder col-2"></span>
+                                            <span class="placeholder col-2"></span>
+                                            <span class="placeholder col-3"></span>
+                                            <span class="placeholder col-6"></span>
+                                            <span class="placeholder col-7"></span>
+                                            <span class="placeholder col-4"></span>
+                                        </p>
+                                        <button type="button" class="btn btn-primary text-white" disabled>Learn more</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <button type="button" class="carousel-control-prev" data-bs-target="#headerCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button type="button" class="carousel-control-next" data-bs-target="#headerCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="recommendation-section py-3">
+            <div class="container-fluid">
+                <h3 class="text-center">Recommended Manga</h3>
+                <div class="recomended-list gap-3" id="recommended-list">
+
+                    <div class="card">
+                        <div class="bg-body-secondary" style="width: 100%; height: 200px;"></div>
+                        <div class="card-body placeholder-glow">
+                            <p class="card-title fw-bold"><span class="placeholder col-4"></span></p>
+                            <p class="card-text text-capitalize">
+                                <small>
+                                    <span class="placeholder col-3"></span>
+                                    <span class="placeholder col-4"></span>
+                                    <span class="placeholder col-1"></span>
+                                    <span class="placeholder col-2"></span>
+                                    <span class="placeholder col-5"></span>
+                                    <span class="placeholder col-4"></span>
+                                    <span class="placeholder col-2"></span>
+                                </small>
+                            </p>
+                            <div class="d-flex justify-content-end">
+                                <button class="btn btn-primary btn-sm text-white" disabled>Learn more</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="bg-body-secondary" style="width: 100%; height: 200px;"></div>
+                        <div class="card-body placeholder-glow">
+                            <p class="card-title fw-bold"><span class="placeholder col-4"></span></p>
+                            <p class="card-text text-capitalize">
+                                <small>
+                                    <span class="placeholder col-3"></span>
+                                    <span class="placeholder col-4"></span>
+                                    <span class="placeholder col-1"></span>
+                                    <span class="placeholder col-2"></span>
+                                    <span class="placeholder col-5"></span>
+                                    <span class="placeholder col-4"></span>
+                                    <span class="placeholder col-2"></span>
+                                </small>
+                            </p>
+                            <div class="d-flex justify-content-end">
+                                <button class="btn btn-primary btn-sm text-white" disabled>Learn more</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="bg-body-secondary" style="width: 100%; height: 200px;"></div>
+                        <div class="card-body placeholder-glow">
+                            <p class="card-title fw-bold"><span class="placeholder col-4"></span></p>
+                            <p class="card-text text-capitalize">
+                                <small>
+                                    <span class="placeholder col-3"></span>
+                                    <span class="placeholder col-4"></span>
+                                    <span class="placeholder col-1"></span>
+                                    <span class="placeholder col-2"></span>
+                                    <span class="placeholder col-5"></span>
+                                    <span class="placeholder col-4"></span>
+                                    <span class="placeholder col-2"></span>
+                                </small>
+                            </p>
+                            <div class="d-flex justify-content-end">
+                                <button class="btn btn-primary btn-sm text-white" disabled>Learn more</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="bg-body-secondary" style="width: 100%; height: 200px;"></div>
+                        <div class="card-body placeholder-glow">
+                            <p class="card-title fw-bold"><span class="placeholder col-4"></span></p>
+                            <p class="card-text text-capitalize">
+                                <small>
+                                    <span class="placeholder col-3"></span>
+                                    <span class="placeholder col-4"></span>
+                                    <span class="placeholder col-1"></span>
+                                    <span class="placeholder col-2"></span>
+                                    <span class="placeholder col-5"></span>
+                                    <span class="placeholder col-4"></span>
+                                    <span class="placeholder col-2"></span>
+                                </small>
+                            </p>
+                            <div class="d-flex justify-content-end">
+                                <button class="btn btn-primary btn-sm text-white" disabled>Learn more</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="bg-body-secondary" style="width: 100%; height: 200px;"></div>
+                        <div class="card-body placeholder-glow">
+                            <p class="card-title fw-bold"><span class="placeholder col-4"></span></p>
+                            <p class="card-text text-capitalize">
+                                <small>
+                                    <span class="placeholder col-3"></span>
+                                    <span class="placeholder col-4"></span>
+                                    <span class="placeholder col-1"></span>
+                                    <span class="placeholder col-2"></span>
+                                    <span class="placeholder col-5"></span>
+                                    <span class="placeholder col-4"></span>
+                                    <span class="placeholder col-2"></span>
+                                </small>
+                            </p>
+                            <div class="d-flex justify-content-end">
+                                <button class="btn btn-primary btn-sm text-white" disabled>Learn more</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="bg-body-secondary" style="width: 100%; height: 200px;"></div>
+                        <div class="card-body placeholder-glow">
+                            <p class="card-title fw-bold"><span class="placeholder col-4"></span></p>
+                            <p class="card-text text-capitalize">
+                                <small>
+                                    <span class="placeholder col-3"></span>
+                                    <span class="placeholder col-4"></span>
+                                    <span class="placeholder col-1"></span>
+                                    <span class="placeholder col-2"></span>
+                                    <span class="placeholder col-5"></span>
+                                    <span class="placeholder col-4"></span>
+                                    <span class="placeholder col-2"></span>
+                                </small>
+                            </p>
+                            <div class="d-flex justify-content-end">
+                                <button class="btn btn-primary btn-sm text-white" disabled>Learn more</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-primary text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 d-flex flex-row gap-3">
+                    <a href="https://getbootstrap.com/" class="fs-1" target="_blank"><i class="bi bi-bootstrap-fill"></i></a>
+                    <a href="https://github.com/Ch4rlzki" class="fs-1" target="_blank"><i class="bi bi-github"></i></a>
+                </div>
+                <div class="col-lg d-flex align-items-md-center justify-content-center justify-content-md-end mt-2 mt-md-0">
+                    <div class="text-center text-md-end">
+                        <label>&copy; 2023 MangaVerse</label><br>
+                        <small class="opacity-50">Made by Ch4rlzki</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="application/javascript" src='./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js'></script>
+    <script type="application/javascript" src="./assets/js/home.bundle.js"></script>
+</body>
+</html>
